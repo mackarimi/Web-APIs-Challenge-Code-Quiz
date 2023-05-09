@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to CSS stylesheet file -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet" />
+  <script defer src="assets/js/script.js"></script>
+  <title>Welcome to The Quiz Challenge</title>
+</head>
+
+<body>
+  <header>
+    <p id="vh-scores">View High Scores</p>
+    <p>Time: <span id="time">00</span></p>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>The Coding Quiz!</h2>
+      <strong>
+        <p>
+
+          Try to answer the following code-related questions within the time limit.
+          <br />
+          Keep in mind that <em>incorrect</em> answers will penalize your score/time by ten seconds!
+        </p>
+      </strong>
+      <button id="start-quiz">Start Quiz</button>
+    </section>
+    <section id="quiz" class="hidden">
+      <h2 id="question">Questions</h2>
+      <div id="choices"></div>
+      <h3 id="correct-incorrect" class="corr-incorr"></h3>
+
+    </section>
+    <section id="finish" class="hidden">
+      <h2>All done!</h2>
+      <p>Your Final Score: <span id="final-score"></span></p>
+      <form id="form">
+        <label for="initials">Enter Initials:</label>
+        <input type="text" name="initials" id="initials" />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <section id="high-scores" class="hidden">
+      <button id="restart-quiz" class="left-button">Restart</button>
+      <button id="clear-scores" class="right-button">Clear High Scores</button>
+      <h2>High Scores</h2>
+      <h3 id="highscore-list"></h3>
+    </section>
+  </main>
+</body>
+
+</html>

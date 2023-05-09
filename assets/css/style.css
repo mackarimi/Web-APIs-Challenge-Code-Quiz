@@ -1,0 +1,123 @@
+/* Set variables */
+:root {
+  --font-family-orbitron: "Orbitron";
+  --button-background-color: #e08a5c;
+  --button-hover-color: #22ff05;
+  --link-text-color: #070707;
+  --button-text-color: #ffffff;
+  --link-text-hover-color: #22ff05;
+  --correct-incorrect-text-color: #000000;
+  --high-score-board-bg-color: #000000;
+  --text-color: #000000;
+  --font-size: 10px;
+}
+
+/* Use a box-sizing to make it easier when doing element sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  padding: 0;
+  font-family: var(--font-family-orbitron);
+}
+
+/* Ensure HTML uses box-sizing as well */
+html {
+  box-sizing: border-box;
+}
+
+/* globally format headers */
+header {
+  color: var(--button-text-color);
+  display: flex;
+  justify-content: space-between;
+  background-color: #e08a5c;
+}
+
+/* Main content formatting */
+main {
+  background-color: #7f7fcd88;
+  color: var(--text-color);
+  padding: 6rem;
+  margin-bottom: 50px auto;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+
+/* Format certain pages specifically for alignment */
+#quiz,
+#finish {
+  text-align: left;
+}
+
+/* General headings formatting */
+p .button {
+  font-size: 22px;
+}
+
+h2,
+h1 {
+  font-size: 2rem;
+}
+
+/* Formatting for larger heading */
+h3 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+/* Used on all elements, ensuring they all use box-sizing and have margin/padding set to zero */
+.corr-incorr:after,
+.corr-incorr:before {
+  /* line on top of answers */
+  align-items: center;
+  text-decoration: overline;
+}
+
+/* Change text color of link when hovering over the item */
+#vh-scores:hover {
+  color: var(--link-text-hover-color);
+  cursor: pointer;
+}
+
+/* Buttons formatting */
+button,
+input[type="submit"] {
+  color: var(--button-text-color);
+  cursor: pointer;
+  background-color: var(--button-background-color);
+  border: double;
+  border-radius: 4rem;
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+/* Button hover formatting */
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* High score display item formatting */
+#choices {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+/* Positioning for quiz start button */
+#start-quiz {
+  display: inline;
+  margin-top: 3vh;
+}
+
+
+/* Hide element */
+.hidden {
+  display: none;
+  font-size: 1.2rem;
+}
