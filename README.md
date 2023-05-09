@@ -56,5 +56,5 @@ Special thanks to : Instructor, Classmates, and TAs in the UC Berkeley bootcamp.
 
 ## Deployed
 
-This project is deployed at [https://github.com/mackarimi/coding-quiz].
-Click for Webpage: https://mackarimi.github.io/coding-quiz/
+This project is deployed at [https://github.com/mackarimi/Web-APIs-Challenge-Code-Quiz/tree/main].
+Click for Webpage: https://mackarimi.github.io/Web-APIs-Challenge-Code-Quiz/
